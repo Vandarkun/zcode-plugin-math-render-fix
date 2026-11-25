@@ -30,6 +30,13 @@ The two layers are independent, and either one alone keeps formulas readable. Wh
 
 2. Under **Personal → vandarkun-plugins**, install **Math Render Fix**.
 
+Or with ZCode's command line:
+
+```shell
+zcode plugins marketplace add https://github.com/Vandarkun/zcode-plugin-math-render-fix
+zcode plugins install math-render-fix@vandarkun-plugins
+```
+
 Enable it and open a new session. Type `/` to find `/mathfix` and `/mathfix-patch`.
 
 The hooks need `node` on `PATH`. They make no network request and write no files. Besides what ZCode passes to them, the Stop hook only reads the state file the patch leaves behind, to tell whether the patch is still in effect.

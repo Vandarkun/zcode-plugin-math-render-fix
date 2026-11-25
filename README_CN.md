@@ -30,6 +30,13 @@ ZCode 用 KaTeX 渲染聊天里的 Markdown，只识别美元符分界符。模�
 
 2. 在 **个人 → vandarkun-plugins** 里找到「公式渲染修复」，点击安装。
 
+也可以用 ZCode 的命令行：
+
+```shell
+zcode plugins marketplace add https://github.com/Vandarkun/zcode-plugin-math-render-fix
+zcode plugins install math-render-fix@vandarkun-plugins
+```
+
 安装并启用后新建会话即可生效。输入 `/` 可以看到 `/mathfix` 和 `/mathfix-patch`。
 
 Hook 需要 PATH 上有 `node`。它们不联网，也不写入任何文件；除了 ZCode 传给它们的内容，Stop Hook 只会读取补丁留下的状态文件，用来判断补丁是否仍然生效。
