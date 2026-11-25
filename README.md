@@ -85,7 +85,7 @@ node plugins/math-render-fix/tests/verify-patch.mjs [path to app.asar]   # end-t
 
 ## Relation to the official marketplace
 
-The plugin part (the two hooks and `/mathfix`, without the patch) has been submitted to the official plugin marketplace and is awaiting review: [zai-org/zcode-plugins#222](https://github.com/zai-org/zcode-plugins/pull/222). The official version does not modify ZCode's installation.
+The full version in this repository, including the optional renderer patch, has been submitted to the official plugin marketplace and is awaiting review: [zai-org/zcode-plugins#225](https://github.com/zai-org/zcode-plugins/pull/225). The earlier #222, which contained only the hooks and `/mathfix`, was closed and superseded by #225.
 
 The root cause is in ZCode's own renderer. Reports can be filed with [zai-org/feedback](https://github.com/zai-org/feedback).
 

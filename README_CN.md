@@ -83,9 +83,9 @@ node plugins/math-render-fix/tests/run.mjs                            # Hook 与
 node plugins/math-render-fix/tests/verify-patch.mjs [app.asar 路径]    # 补丁的端到端检查，只读
 ```
 
-## 与官方市场版本的关系
+## 与官方市场的关系
 
-插件部分（两个 Hook 和 `/mathfix`，不含补丁）已提交给官方插件市场，等待审核：[zai-org/zcode-plugins#222](https://github.com/zai-org/zcode-plugins/pull/222)。官方市场里的版本不会改动 ZCode 的安装文件。
+本仓库中的完整版（含可选的渲染层补丁）已提交给官方插件市场，等待审核：[zai-org/zcode-plugins#225](https://github.com/zai-org/zcode-plugins/pull/225)。早先只含 Hook 和 `/mathfix` 的 #222 已关闭，由 #225 取代。
 
 渲染问题的根因在 ZCode 的渲染器里，可以到 [zai-org/feedback](https://github.com/zai-org/feedback) 向官方反馈。
 
